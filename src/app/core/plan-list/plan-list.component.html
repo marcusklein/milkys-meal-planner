@@ -1,0 +1,15 @@
+<div fxLayout="row">
+  <h1>
+    Plans
+  </h1>
+</div>
+
+<div fxLayout="row"
+     fxLayoutAlign="space-around center">
+  <app-plan-card
+    fxFlex="30"
+    *ngFor="let plan of plans$ | async; trackBy:trackByPlantId"
+    [plan]="plan">
+  </app-plan-card>
+
+</div>

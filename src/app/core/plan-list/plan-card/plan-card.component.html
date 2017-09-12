@@ -1,0 +1,26 @@
+
+<md-card>
+  <md-card-title>
+    {{plan.name}}
+  </md-card-title>
+  <app-chart
+    md-card-image>
+  </app-chart>
+
+  <md-card-actions
+    fxLayout="row"
+    fxLayoutAlign="space-around center">
+    <button
+      md-button
+      [routerLink]="['/plan', plan.id]">
+      View
+    </button>
+    <button
+      md-button
+          [routerLink]="['/plan', plan.id, '/edit']">
+      Edit
+    </button>
+  </md-card-actions>
+
+</md-card>
+
